@@ -1,0 +1,6 @@
+name: mcMMOAddon
+description: Only a simple mcMMO addon plugin.
+version: 1.0
+author: zPedroo_
+main: com.zpedroo.mcmmoaddon.mcMMOAddon
+depend: [mcMMO, ActionBarAPI, nChat]

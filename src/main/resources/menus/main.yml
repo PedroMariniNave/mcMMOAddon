@@ -1,0 +1,22 @@
+Inventory:
+  title: 'Habilidades'
+  size: 27
+  items:
+    1:
+      action: PLAYER_SKILLS
+      type: SKULL_ITEM
+      owner: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzc2N2EwY2FjZGQ3MzE2ZDQwZTY5ZjZiYjkyM2NiNmI4YmYyZDgyNDk5MThkOGQxYjk0ZjJiZjQ2OWQ1Y2VmYyJ9fX0=
+      name: '&6Minhas Habilidades'
+      lore:
+        - '&7Clique para ver o nível'
+        - '&7de suas habilidades!'
+      slot: 12
+    2:
+      action: TOP_SKILLS
+      type: SKULL_ITEM
+      owner: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzRiNjYyZDNiNTI5YTE4NzI2MWNhYjg2YzZlNTY0MjNiZjg3NmFhMjQ5ZDAzMGZhZWFmMzQzNjJmMzQ0NzI3NyJ9fX0=
+      name: '&6Top Habilidades'
+      lore:
+        - '&7Clique para ver os jogadores que'
+        - '&7possuem os maiores níveis de habilidades!'
+      slot: 14

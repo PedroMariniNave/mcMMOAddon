@@ -1,0 +1,50 @@
+Settings:
+  commands:
+    mctop:
+      command: mctop
+      aliases: [mmo, mcmmo, mcmmotop]
+    item:
+      command: mcitem
+      aliases: [mmoitem, mcmmoitem]
+      permission: mcmmo.admin
+      permission-message: '&cVocê não possui permissão para executar esse comando!'
+  announce-level: 500 # a cada quantos níveis irá anunciar para todos o nível de habilidade do jogador
+  mctop:
+    tag: '&6[⚒]'
+    update-every: 600 # segundos
+
+Messages:
+  command-usage: '&cUso correto: /{cmd} <jogador> <skill> <exp>!'
+  invalid-skill: '&cEssa skill não existe ou não tem um item definido!'
+  invalid-amount: '&cA quantia informada é inválida!'
+  offline-player: '&cEsse jogador está offline!'
+  level-reached: '&6&l[Habilidades] &7O jogador &f{player} &7atingiu o nível &f{level} &7na habilidade de &f{skill}&7!'
+  new-mctop:
+    - ''
+    - '&6&l[Habilidades] &7O jogador &f{player} &7é o novo &6[⚒] &7com um nível total de habilidades de &f{level}&7!'
+    - ''
+
+Action-Bar:
+  exp: '&6&l[Habilidades] &f+{xp_gained} &7EXP &8| &f{actual_xp}&7/&f{needed_xp} &7EXP &8| &f{skill_name} &8| &7Lv. &f{skill_level}'
+
+Items:
+  alchemy: # skill name
+    type: SKULL_ITEM
+    owner: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjRhZjhkNTc1ZjBhNTI0ZWY2NmEyMTU3M2U4YTRhOGFjN2Q2NDBiMDBkOThlMmU5Mzc0ZTYwNDcwZTdjODZmMCJ9fX0=
+    name: '&aExperiência de Alquimia &7[&fx{amount}&7]'
+    lore:
+      - '&7Esse item guarda &f{amount} &7EXP da'
+      - '&7habilidade de &fAlquimia&7!'
+
+Number-Formatter:
+  - "k"
+  - "M"
+  - "B"
+  - "T"
+  - "Q"
+  - "QQ"
+  - "S"
+  - "SS"
+  - "O"
+  - "N"
+  - "D"

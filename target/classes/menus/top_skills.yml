@@ -1,0 +1,55 @@
+Inventory:
+  title: 'Top Habilidades'
+  size: 27
+  items:
+    swords:
+      type: DIAMOND_SWORD
+      glow: true
+      name: '&aEspadas'
+      lore:
+        - '&7Abaixo estão os jogadores'
+        - '&7com os maiores níveis:'
+        - ''
+        - '{top}'
+      slot: 11
+    axes:
+      type: DIAMOND_AXE
+      glow: true
+      name: '&aMachados'
+      lore:
+        - '&7Abaixo estão os jogadores'
+        - '&7com os maiores níveis:'
+        - ''
+        - '{top}'
+      slot: 12
+    mining:
+      type: DIAMOND_PICKAXE
+      glow: true
+      name: '&aMineração'
+      lore:
+        - '&7Abaixo estão os jogadores'
+        - '&7com os maiores níveis:'
+        - ''
+        - '{top}'
+      slot: 13
+    herbalism:
+      type: DIAMOND_HOE
+      glow: true
+      name: '&aHerbalismo'
+      lore:
+        - '&7Abaixo estão os jogadores'
+        - '&7com os maiores níveis:'
+        - ''
+        - '{top}'
+      slot: 14
+    fishing:
+      type: FISHING_ROD
+      name: '&aPesca'
+      lore:
+        - '&7Abaixo estão os jogadores'
+        - '&7com os maiores níveis:'
+        - ''
+        - '{top}'
+      slot: 15
+
+Display-Format: ' &8▶ &f{pos}º &7{player} &8- &7Lv. &f{level}'

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ActionBarAPI">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/libraries/ActionBarAPI.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
