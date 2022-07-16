@@ -15,36 +15,36 @@ public class DisabledSkillsListeners implements Listener {
 
     @EventHandler
     public void onActivate(McMMOPlayerAbilityActivateEvent event) {
-        if (DisabledSkills.NAMES.contains(event.getSkill().getName())) event.setCancelled(true);
+        if (DisabledSkills.NAMES.contains(event.getSkill().name())) event.setCancelled(true);
     }
 
     @EventHandler
     public void onXpGain(McMMOPlayerXpGainEvent event) {
-        if (DisabledSkills.NAMES.contains(event.getSkill().getName())) event.setCancelled(true);
+        if (DisabledSkills.NAMES.contains(event.getSkill().name())) event.setCancelled(true);
     }
 
     @EventHandler
     public void onRepair(McMMOPlayerRepairCheckEvent event) {
-        if (DisabledSkills.NAMES.contains(event.getSkill().getName())) event.setCancelled(true);
+        if (DisabledSkills.NAMES.contains(event.getSkill().name())) event.setCancelled(true);
     }
 
     @EventHandler
     public void onDisarm(McMMOPlayerDisarmEvent event) {
-        if (DisabledSkills.NAMES.contains(event.getSkill().getName())) event.setCancelled(true);
+        if (DisabledSkills.NAMES.contains(event.getSkill().name())) event.setCancelled(true);
     }
 
     @EventHandler
     public void onFishing(McMMOPlayerFishingEvent event) {
-        if (DisabledSkills.NAMES.contains(event.getSkill().getName())) event.setCancelled(true);
+        if (DisabledSkills.NAMES.contains(event.getSkill().name())) event.setCancelled(true);
     }
 
     @EventHandler
     public void onFishingTreasure(McMMOPlayerFishingTreasureEvent event) {
-        if (DisabledSkills.NAMES.contains(event.getSkill().getName())) event.setCancelled(true);
+        if (DisabledSkills.NAMES.contains(event.getSkill().name())) event.setCancelled(true);
     }
 
     @EventHandler
     public void onCatalysis(McMMOPlayerCatalysisEvent event) {
-        if (DisabledSkills.NAMES.contains(event.getSkill().getName())) event.setCancelled(true);
+        if (DisabledSkills.NAMES.contains(event.getSkill().name())) event.setCancelled(true);
     }
 }
