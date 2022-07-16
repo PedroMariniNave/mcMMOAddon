@@ -1,6 +1,8 @@
 package com.zpedroo.mcmmoaddon;
 
 import com.zpedroo.mcmmoaddon.commands.mcMMOItemCmd;
+import com.zpedroo.mcmmoaddon.hooks.PlaceholderAPIHook;
+import com.zpedroo.mcmmoaddon.listeners.DisabledSkillsListeners;
 import com.zpedroo.mcmmoaddon.listeners.McTopTagListener;
 import com.zpedroo.mcmmoaddon.listeners.PlayerCommandListener;
 import com.zpedroo.mcmmoaddon.listeners.PlayerGeneralListeners;
@@ -38,11 +40,16 @@ public class mcMMOAddon extends JavaPlugin {
         new Menus();
         new McTopUpdateTask(this);
 
+        if (getServer().getPluginManager().getPlugin("PlaceholderAPI") != null) {
+            new PlaceholderAPIHook(this).register();
+        }
+
         registerListeners();
         registerCommand(ITEM_COMMAND, ITEM_ALIASES, new mcMMOItemCmd());
     }
 
     private void registerListeners() {
+        getServer().getPluginManager().registerEvents(new DisabledSkillsListeners(), this);
         getServer().getPluginManager().registerEvents(new McTopTagListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerCommandListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerGeneralListeners(), this);

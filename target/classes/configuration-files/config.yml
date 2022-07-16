@@ -13,6 +13,12 @@ Settings:
     tag: '&6[⚒]'
     update-every: 600 # segundos
 
+Disabled-Skills:
+  - 'TAMING'
+  - 'REPAIR'
+  - 'SALVAGE'
+  - 'UNARMED'
+
 Messages:
   command-usage: '&cUso correto: /{cmd} <jogador> <skill> <exp>!'
   invalid-skill: '&cEssa skill não existe ou não tem um item definido!'
